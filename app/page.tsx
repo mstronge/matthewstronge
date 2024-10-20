@@ -1,18 +1,22 @@
 import { BlogPosts } from 'app/components/posts'
+import Image from 'next/image';
+import me from '../public/images/matthew-stronge-small.png'
 
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
+      <div className="flex mb-12">
+        <Image alt="Matthew Stronge" src={me} className='w-36 h-36 rounded-full' />
+        <div className='pl-12 space-y-1'>
+          <h1 className="mb-4 text-4xl m-0 p-0 font-semibold">
+          Matthew Stronge
+          </h1>
+          <h2 className="mb-4 text-xl font-semibold">
+            Father, software engineer and founder/CEO.</h2>
+          <p className="mb-0 pb-0">  I build things with NodeJS/React/Javascript. <em>Sometimes</em> I write about <strong>Javascript</strong>, <strong>AI</strong> and its utilisation within <strong>financial technology.</strong></p>
+        </div>
+      </div>
+
       <div className="my-8">
         <BlogPosts />
       </div>
