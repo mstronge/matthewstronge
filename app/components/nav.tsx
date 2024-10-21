@@ -6,10 +6,12 @@ import { FaXTwitter } from "react-icons/fa6";
 const navItems = {
   '/': {
     name: 'home',
+    target: '',
     icon: <IoHomeSharp />,
   },
   '/blog': {
     name: 'blog',
+    target: '',
     icon: <IoPencilSharp />,
   },
   'https://www.github.com/mstronge': {
