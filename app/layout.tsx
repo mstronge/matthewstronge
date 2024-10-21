@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: '',
   openGraph: {
     title: 'MatthewStronge.com',
-    description: 'This is my portfolio.',
+    description: 'This is my portfolio/blog.',
     url: baseUrl,
     siteName: 'Matthew Stronge',
     locale: 'en_GB',
