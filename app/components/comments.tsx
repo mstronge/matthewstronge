@@ -13,7 +13,7 @@ return (
             category="Announcements"
             categoryId="DIC_kwDONDM4Gc4Cjife"
             mapping="specific"
-            term="Welcome to @giscus/react component!"
+            term={id}
             reactionsEnabled="1"
             emitMetadata="0"
             inputPosition="bottom"
