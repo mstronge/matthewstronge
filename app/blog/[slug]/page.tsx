@@ -95,7 +95,7 @@ export default function Blog({ params }) {
       <article className="prose">
         <CustomMDX source={post.content} />
       </article>
-      <Comments />
+      <Comments id={post.slug} />
     </section>
   )
 }
