@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { baseUrl } from 'app/sitemap'
+import Giscus from '@giscus/react';
+import Comments from 'app/components/comments';
 
 export async function generateStaticParams() {
   let posts = getBlogPosts()
@@ -76,8 +78,8 @@ export default function Blog({ params }) {
               : `/og?title=${encodeURIComponent(post.metadata.title)}`,
             url: `${baseUrl}/blog/${post.slug}`,
             author: {
-              '@type': 'Person',
-              name: 'My Portfolio',
+              '@type': 'Matthew Stronge',
+              name: 'MatthewStronge.com',
             },
           }),
         }}
@@ -93,6 +95,7 @@ export default function Blog({ params }) {
       <article className="prose">
         <CustomMDX source={post.content} />
       </article>
+      <Comments />
     </section>
   )
 }
