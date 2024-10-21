@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { IoCalendarSharp } from "react-icons/io5";
 
 const navItems = {
   '/': {
@@ -30,7 +31,8 @@ export function Navbar() {
               )
             })}
           </div>
-          <a target='_blank' href="https://www.cal.com/matthewstronge" className='border-gray-600 cursor-pointer border px-4 py-2 rounded'>Let's chat</a>
+          <a target='_blank' href="https://www.cal.com/matthewstronge" className='flex content-center align-middle justify-center'>Let's chat <IoCalendarSharp />
+          </a>
         </nav>
       </div>
     </aside>

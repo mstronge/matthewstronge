@@ -5,9 +5,9 @@ import me from '../public/images/matthew-stronge-small.png'
 export default function Page() {
   return (
     <section>
-      <div className="flex mb-12">
+      <div className="flex flex-col justify-center align-middle mb-12 md:flex-row">
         <Image alt="Matthew Stronge" src={me} className='w-36 h-36 rounded-full' />
-        <div className='pl-12 space-y-1'>
+        <div className='pl-0 pt-8 sm:pl-12 sm:pt-0 space-y-1'>
           <h1 className="mb-4 text-4xl m-0 p-0 font-semibold">
           Matthew Stronge
           </h1>

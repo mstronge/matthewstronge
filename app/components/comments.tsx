@@ -3,11 +3,11 @@
 
 import Giscus from "@giscus/react"
 
-export default function Comments() {
+export default function Comments({ id }) {
 return (
-    <footer className="mb-16">
+    <footer className="mb-16 mt-16">
         <Giscus
-            id="comments"
+            id={id}
             repo="mstronge/matthewstronge"
             repoId="R_kgDONDM4GQ"
             category="Announcements"
@@ -16,7 +16,7 @@ return (
             term="Welcome to @giscus/react component!"
             reactionsEnabled="1"
             emitMetadata="0"
-            inputPosition="top"
+            inputPosition="bottom"
             theme="dark"
             lang="en"
             loading="lazy"
