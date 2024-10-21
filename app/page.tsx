@@ -13,7 +13,8 @@ export default function Page() {
           </h1>
           <h2 className="mb-4 text-xl font-semibold">
             Father, software engineer and founder/CEO.</h2>
-          <p className="mb-0 pb-0">  I build things with NodeJS/React/Javascript. <em>Sometimes</em> I write about <strong>Javascript</strong>, <strong>AI</strong> and its utilisation within <strong>financial technology.</strong></p>
+          <p className="mb-0 pb-0">  I build things with NodeJS/React/Javascript. <em>Sometimes</em> I write about <strong>Javascript</strong>, <strong>AI</strong> and its utilisation within <strong>financial technology.</strong>.
+          </p>
         </div>
       </div>
 
