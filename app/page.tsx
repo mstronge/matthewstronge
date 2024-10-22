@@ -13,13 +13,13 @@ import Link from 'next/link';
       <section>
         <div className="flex flex-col justify-center align-middle mb-12 md:flex-row">
           <Image alt="Matthew Stronge" src={me} className='w-36 h-36 rounded-full' />
-          <div className='pl-0 pt-8 sm:pl-12 sm:pt-0 space-y-1'>
+          <div className='pl-0 pt-8 sm:pl-12 sm:pt-0'>
             <h1 className="mb-4 text-4xl m-0 p-0 font-semibold">
             Matthew Stronge
             </h1>
             <h2 className="mb-4 text-xl font-semibold">
               Father, software engineer and founder/CEO.</h2>
-            <p className="mb-0 pb-0 text-gray-400">  I build things with NodeJS/React/Javascript. <em>Sometimes</em> I write about <strong className='text-neutral-100'>Javascript</strong>, <strong className='text-neutral-100'>AI</strong> and its utilisation within <strong className='text-neutral-100'>financial and legal technology.</strong>.
+            <p className="mb-0 pb-0 text-gray-400 mt-8">  I build things with NodeJS/React/Javascript. <em>Sometimes</em> I write about <strong className='text-neutral-100'>Javascript</strong>, <strong className='text-neutral-100'>AI</strong> and its utilisation within <strong className='text-neutral-100'>financial and legal technology.</strong>.
             </p>
           </div>
         </div>
