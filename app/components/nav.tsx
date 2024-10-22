@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { IoCalendarSharp, IoHomeSharp, IoPencilSharp } from "react-icons/io5";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaBlog, FaGithub, FaInstagram, FaLinkedin, FaRss } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const navItems = {
@@ -12,7 +12,7 @@ const navItems = {
   '/blog': {
     name: 'blog',
     target: '',
-    icon: <IoPencilSharp />,
+    icon: <FaRss />,
   },
   'https://www.github.com/mstronge': {
     name: 'github',
