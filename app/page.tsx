@@ -63,7 +63,7 @@ import Link from 'next/link';
           </div>
           </div>
           <div>
-            <p className="text-gray-400"><strong className='text-neutral-100'>Amplir</strong> is a legal tech platform designed to empower individuals by giving them more control and transparency in managing their legal cases. By helping to modernise the justice system, Amplir aims to make legal advice more accessible and streamlined for all.</p>
+            <p className="text-gray-400"><strong className='text-neutral-100'>Amplir</strong>  is a legal tech platform designed to empower individuals by giving them more control and transparency in managing their legal cases. By leveraging AI to enhance insights and streamline processes, we help to modernise the justice system, making legal advice more accessible and effective for all.</p>
           </div>
 
         </div>
