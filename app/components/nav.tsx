@@ -1,7 +1,9 @@
 import Link from 'next/link'
-import { IoCalendarSharp, IoHomeSharp, IoPencilSharp } from "react-icons/io5";
-import { FaBlog, FaGithub, FaInstagram, FaLinkedin, FaRss } from "react-icons/fa";
+import { IoCalendarSharp, IoDiamond, IoDiamondOutline, IoHomeSharp, IoLink, IoMail, IoPencilSharp } from "react-icons/io5";
+import { FaGithub, FaHandPaper, FaInstagram, FaLink, FaLinkedin, FaMailBulk, FaMobile, FaPage4, FaPagelines, FaRss } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { CgProfile } from "react-icons/cg";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 const navItems = {
   '/': {
@@ -33,6 +35,16 @@ const navItems = {
     name: 'x',
     target: '_blank',
     icon: <FaXTwitter />,
+  },
+  '/matthew_stronge_resume.pdf': {
+    name: 'resume',
+    target: '_blank',
+    icon: <CgProfile />,
+  },
+  'mailto:me@matthewstronge.com': {
+    name: 'mail',
+    target: '_blank',
+    icon: <MdOutlineMailOutline />
   },
 }
 
