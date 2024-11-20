@@ -7,6 +7,7 @@ import teach from '../public/images/teachio.png'
 import { FaLink } from 'react-icons/fa';
 import { IoGitBranch } from 'react-icons/io5';
 import Link from 'next/link';
+import GitHubCalendar from 'react-github-calendar';
 
   export default function Page() {
     return (
@@ -19,7 +20,7 @@ import Link from 'next/link';
             </h1>
             <h2 className="mb-4 text-xl font-semibold text-white">
               Father, software engineer and founder/CEO.</h2>
-            <p className="mb-0 pb-0 text-gray-400 mt-8">  I build things with NodeJS/React/Javascript. <em>Sometimes</em> I write about <strong className='text-neutral-100'>Javascript</strong>, <strong className='text-neutral-100'>AI</strong> and its utilisation within <strong className='text-neutral-100'>financial and legal technology.</strong>.
+            <p className="mb-0 pb-0 text-gray-400 mt-8">  I build things with Node.js/React/Javascript. <em>Sometimes</em> I write about <strong className='text-neutral-100'>Javascript</strong>, <strong className='text-neutral-100'>AI</strong> and its utilisation within <strong className='text-neutral-100'>financial and legal technology.</strong>.
             </p>
           </div>
         </div>
@@ -27,6 +28,10 @@ import Link from 'next/link';
       <div className="my-8 mb-16">
         <h2 className="mb-4 text-xl font-semibold text-white">Blog</h2>
         <BlogPosts />
+      </div>
+
+      <div className="my-8 mb-16 flex space-x-4">
+        <GitHubCalendar hideColorLegend username="mstronge" />
       </div>
 
       <div className="my-8 space-y-8 mb-16">
@@ -47,7 +52,7 @@ import Link from 'next/link';
         </div>
         <div>
           <h2 className='font-bold text-white'>Teach.io</h2>
-          <p className="text-gray-400 mb-4">a NodeJS/React based e-learning platform with Zoom, Stripe and Zapier integration.</p>
+          <p className="text-gray-400 mb-4">a Node.js/React based e-learning platform with Zoom, Stripe and Zapier integration.</p>
           <Link target='_blank' href="https://www.teach.io"><FaLink /></Link>
         </div>
       </div>

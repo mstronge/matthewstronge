@@ -11,8 +11,8 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Matthew Stronge | NodeJS, React, Javascript engineer',
-    template: '%s | Matthew Stronge | NodeJS, React, Javascript engineer',
+    default: 'Matthew Stronge | Node.js, React, Javascript engineer',
+    template: '%s | Matthew Stronge | Node.js, React, Javascript engineer',
   },
   description: '',
   openGraph: {
