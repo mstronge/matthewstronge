@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { IoCalendarSharp, IoDiamond, IoDiamondOutline, IoHomeSharp, IoLink, IoMail, IoPencilSharp } from "react-icons/io5";
+import { IoCalendarSharp, IoDiamondOutline, IoHomeSharp, IoLink, IoMail, IoPencilSharp } from "react-icons/io5";
 import { FaGithub, FaHandPaper, FaInstagram, FaLink, FaLinkedin, FaMailBulk, FaMobile, FaPage4, FaPagelines, FaRss } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { CgProfile } from "react-icons/cg";
@@ -69,7 +69,7 @@ export function Navbar() {
                 </Link>
               )
             })}
-            <a target='_blank' className="transition-all self-end hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle justify-end items-center flex-auto py-1 px-2 m-1 space-x-4" href="https://cal.com/matthewstronge?redirect=false"><IoCalendarSharp /> <span className='font-bold hidden sm:block'>Schedule a call</span></a>
+            <a target='_blank' className="transition-all self-end hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle justify-end items-center flex-auto py-1 px-2 m-1 space-x-4" href="https://cal.com/matthewstronge?redirect=false"><IoCalendarSharp /> <span className='font-bold text-white hidden sm:block'>Schedule a call</span></a>
           </div>
         </nav>
       </div>

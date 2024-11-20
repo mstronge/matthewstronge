@@ -36,7 +36,7 @@ export function BlogPosts() {
               <p className="text-gray-400 min-w-48 tabular-nums">
                 {formatDate(post.metadata.publishedAt, false)}
               </p>
-              <p className="text-neutral-100 m-0">
+              <p className="text-white m-0">
                 <span className='font-bold'>{post.metadata.title}</span> <small className='text-xs text-gray-400'>({readingTime(post.content)} min read)</small>
               </p>
             </div>

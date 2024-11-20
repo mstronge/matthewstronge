@@ -14,10 +14,10 @@ import Link from 'next/link';
         <div className="flex flex-col justify-center align-middle mb-12 md:flex-row">
           <Image alt="Matthew Stronge" src={me} className='w-36 h-36 rounded-full' />
           <div className='pl-0 pt-8 sm:pl-12 sm:pt-0'>
-            <h1 className="mb-4 text-4xl m-0 p-0 font-semibold">
+            <h1 className="mb-4 text-4xl m-0 p-0 font-semibold text-white">
             Matthew Stronge
             </h1>
-            <h2 className="mb-4 text-xl font-semibold">
+            <h2 className="mb-4 text-xl font-semibold text-white">
               Father, software engineer and founder/CEO.</h2>
             <p className="mb-0 pb-0 text-gray-400 mt-8">  I build things with NodeJS/React/Javascript. <em>Sometimes</em> I write about <strong className='text-neutral-100'>Javascript</strong>, <strong className='text-neutral-100'>AI</strong> and its utilisation within <strong className='text-neutral-100'>financial and legal technology.</strong>.
             </p>
@@ -25,18 +25,18 @@ import Link from 'next/link';
         </div>
 
       <div className="my-8 mb-16">
-        <h2 className="mb-4 text-xl font-semibold">Blog</h2>
+        <h2 className="mb-4 text-xl font-semibold text-white">Blog</h2>
         <BlogPosts />
       </div>
 
       <div className="my-8 space-y-8 mb-16">
-      <h2 className="mb-4 text-xl font-semibold">Recent work</h2>
+      <h2 className="mb-4 text-xl font-semibold text-white">Recent work</h2>
       <div className="flex">
         <div className="min-w-48">
           <Image alt='Sup.co' src={sup}  className='max-w-20' />
         </div>
         <div>
-          <h2 className='font-bold'>Sup.co</h2>
+          <h2 className='font-bold text-white'>Sup.co</h2>
           <p className="text-gray-400 mb-4">a Remix application integrating with the Meta Graph API to allow small business to connect directly to influencers and drive product sales.</p>
           <Link target='_blank' href="https://www.sup.co"><FaLink /></Link>
         </div>
@@ -46,7 +46,7 @@ import Link from 'next/link';
           <Image alt='Teach.io' src={teach}  className='max-w-24' />
         </div>
         <div>
-          <h2 className='font-bold'>Teach.io</h2>
+          <h2 className='font-bold text-white'>Teach.io</h2>
           <p className="text-gray-400 mb-4">a NodeJS/React based e-learning platform with Zoom, Stripe and Zapier integration.</p>
           <Link target='_blank' href="https://www.teach.io"><FaLink /></Link>
         </div>
@@ -63,7 +63,7 @@ import Link from 'next/link';
           </div>
           </div>
           <div>
-            <p className="text-gray-400"><strong className='text-neutral-100'>Amplir</strong>  is a legal tech platform designed to empower individuals by giving them more control and transparency in managing their legal cases. By leveraging AI to enhance insights and streamline processes, we help to modernise the justice system, making legal advice more accessible and effective for all.</p>
+            <p className="text-gray-400"><strong className='text-white'>Amplir</strong>  is a legal tech platform designed to empower individuals by giving them more control and transparency in managing their legal cases. By leveraging AI to enhance insights and streamline processes, we help to modernise the justice system, making legal advice more accessible and effective for all.</p>
           </div>
 
         </div>
@@ -74,7 +74,7 @@ import Link from 'next/link';
         <h2 className="mb-4 text-xl font-semibold">Open source</h2>
         <div className='flex'>
           <div className='min-w-48'>
-          <h3><strong>Fixparser</strong></h3>
+          <h3 className="text-white"><strong>Fixparser</strong></h3>
           <p className='uppercase text-gray-400 tracking-wider text-xs'>Contributor</p>
           <div className="flex mt-4 space-x-4">
             <Link target="_blank" href="https://fixparser.dev"><FaLink /></Link>
