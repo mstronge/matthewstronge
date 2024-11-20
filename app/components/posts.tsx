@@ -27,20 +27,21 @@ export function BlogPosts() {
           return 1
         })
         .map((post) => (
-          <Link
-            key={post.slug}
-            className="flex flex-col"
-            href={`/blog/${post.slug}`}
-          >
-            <div className="w-full flex flex-col md:flex-row space-x-0 ">
-              <p className="text-gray-400 min-w-48 tabular-nums">
-                {formatDate(post.metadata.publishedAt, false)}
+          <div key={post.slug} className="w-full flex flex-col md:flex-row space-x-2">
+            <Link
+              prefetch
+              className="flex flex-col font-bold"
+              href={`/blog/${post.slug}`}
+            >
+              {post.metadata.title}
+            </Link>
+              <p className="text-gray-400">
+               - posted on {formatDate(post.metadata.publishedAt, false)}
               </p>
-              <p className="text-white m-0">
-                <span className='font-bold'>{post.metadata.title}</span> <small className='text-xs text-gray-400'>({readingTime(post.content)} min read)</small>
+              <p className="text-white">
+                <small className='text-xs text-gray-200'>({readingTime(post.content)} min read)</small>
               </p>
-            </div>
-          </Link>
+          </div>
         ))}
     </div>
   )

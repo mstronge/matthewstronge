@@ -1,0 +1,140 @@
+---
+title: 'Using ES6 maps in Javascript'
+publishedAt: '2024-11-20'
+summary: 'If you’re a JavaScript developer and haven’t explored Map yet, let me tell you—you’re missing out. Maps came into our lives with ES6 (thank you, ES6!) and made working with key-value data so much better.'
+---
+
+If you’re a JavaScript developer and haven’t explored `Map` yet, let me tell you—you’re missing out. Maps came into our lives with ES6 (thank you, ES6!) and made working with key-value data so much better. Sure, we’ve been using objects for years to get the job done, but Maps bring some cool perks that make them worth a look. Let’s dive into why Maps are so great.
+
+## So, What’s a Map?
+
+A `Map` is basically a collection of key-value pairs, but here’s the kicker: the keys can be *anything*. Numbers, objects, functions—you name it. This is already a big step up from objects, where keys are always strings (or symbols).
+
+Here’s what a Map looks like in action:
+
+```javascript
+const myMap = new Map();
+myMap.set('name', 'Alice');
+myMap.set(42, 'The Answer');
+myMap.set({ id: 1 }, 'Object Key');
+
+console.log(myMap.get('name')); // Alice
+console.log(myMap.get(42));    // The Answer
+```
+
+Flexible keys. What’s not to love?
+
+## Why Maps Are Better Than Objects (Sometimes)
+
+### Flexible Keys
+
+I touched on this already, but it’s worth repeating. Objects only let you use strings as keys, which can be limiting. Maps don’t have this problem. Want to use a function as a key? Go for it!
+
+```javascript
+const fnKey = () => {};
+const myMap = new Map();
+myMap.set(fnKey, 'Function as key');
+
+console.log(myMap.get(fnKey)); // Function as key
+```
+
+### Keeps Things in Order
+
+Maps maintain the order of their entries. Add things in a certain order, and they stay that way when you iterate over them. With objects, the order can get... unpredictable.
+
+```javascript
+const myMap = new Map();
+myMap.set('first', 1);
+myMap.set('second', 2);
+
+for (const [key, value] of myMap) {
+  console.log(key, value);
+}
+// Outputs:
+// first 1
+// second 2
+```
+
+Simple, clean, and predictable. Love it.
+
+### Faster for Big Data
+
+Maps are optimized for adding, deleting, and looking up entries, especially when you’re working with large amounts of data. Objects can slow down because of how they handle prototypes and hashing.  
+
+Here’s a quick example:
+
+```javascript
+const myMap = new Map();
+const myObject = {};
+
+for (let i = 0; i < 1e6; i++) {
+  myMap.set(i, `value${i}`);
+  myObject[i] = `value${i}`;
+}
+
+// Lookup
+console.time('Map');
+console.log(myMap.get(999999));
+console.timeEnd('Map');
+
+console.time('Object');
+console.log(myObject[999999]);
+console.timeEnd('Object');
+```
+
+### Handy Methods
+
+Maps come with built-in methods that make life easier:
+
+- `set(key, value)` - Add or update an entry.
+- `get(key)` - Fetch a value.
+- `delete(key)` - Remove an entry.
+- `has(key)` - Check if a key exists.
+- `clear()` - Wipe the whole thing clean.
+
+Compare that to objects, where you often need to rely on hacks or utility functions.
+
+```javascript
+const myMap = new Map();
+myMap.set('key1', 'value1');
+console.log(myMap.has('key1')); // true
+myMap.delete('key1');
+console.log(myMap.has('key1')); // false
+```
+
+### No Prototype Weirdness
+
+Objects inherit from `Object.prototype`, so certain keys like `constructor` can mess things up if you’re not careful. Maps? They don’t have this issue. No more worrying about accidental prototype pollution.
+
+```javascript
+const obj = {};
+obj['__proto__'] = 'oops';
+console.log(obj.__proto__); // [Object: null prototype]
+
+const myMap = new Map();
+myMap.set('__proto__', 'safe');
+console.log(myMap.get('__proto__')); // safe
+```
+
+### Count Entries Easily
+
+Want to know how many items are in a Map? Just check `size`. It’s that simple. No more `Object.keys(obj).length` nonsense.
+
+```javascript
+const myMap = new Map();
+myMap.set('key1', 'value1');
+myMap.set('key2', 'value2');
+
+console.log(myMap.size); // 2
+```
+
+## When Should You Use Maps?
+
+Okay, so Maps are great, but they’re not a complete replacement for objects. Use them when:
+
+- You need non-string keys.
+- You care about the order of entries.
+- You’re working with a big dataset and want better performance.
+- You want to avoid prototype-related headaches.
+
+Maps bring a lot to the table for JavaScript developers. They’re fast, flexible, and intuitive to use. If you’re still using objects for all your key-value needs, give Maps a try. They might just make your life a whole lot easier.
