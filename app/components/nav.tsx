@@ -63,13 +63,13 @@ export function Navbar() {
                   key={path}
                   href={path}
                   target={target}
-                  className="transition-all items-center hover:text-neutral-800 hover:scale-150 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className="transition-all items-center hover:scale-150 hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
                 >
                   {icon}
                 </Link>
               )
             })}
-            <a target='_blank' className="transition-all self-end hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle justify-end items-center flex-auto py-1 px-2 m-1 space-x-4" href="https://cal.com/matthewstronge?redirect=false"><IoCalendarSharp /> <span className='font-bold text-white hidden sm:block'>Schedule a call</span></a>
+            <a target='_blank' className="transition-all self-end hover:text-neutral-200 flex align-middle justify-end items-center flex-auto py-1 px-2 m-1 space-x-4" href="https://cal.com/matthewstronge?redirect=false"><IoCalendarSharp /> <span className='font-bold text-white hidden sm:block'>Schedule a call</span></a>
           </div>
         </nav>
       </div>
